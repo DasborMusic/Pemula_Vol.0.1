@@ -9,4 +9,5 @@ def generate_image(model, prompt):
     img = Image.new("RGB", (512, 512), color="black")
     draw = ImageDraw.Draw(img)
     draw.text((10, 10), prompt, fill="white")
+    img.save(output_path)
     return img
