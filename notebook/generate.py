@@ -1,12 +1,9 @@
 # generate.py
-from utils import load_model, generate_image
+from utils import generate_image
 
 def main():
     prompt = input("Masukkan prompt untuk gambar Heavy Metal: ")
-    model = load_model("stable-diffusion")
-    result = generate_image(model, prompt)
-    result.save("output.png")
-    print("Gambar berhasil disimpan sebagai output.png")
+    generate_image(prompt)
 
 if __name__ == "__main__":
     main()
