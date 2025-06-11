@@ -1,5 +1,0 @@
-torch==2.0.1
-transformers==4.29.2
-diffusers==0.16.1
-accelerate==0.18.0
-safetensors==0.3.1
